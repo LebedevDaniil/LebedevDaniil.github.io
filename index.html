@@ -1,31 +1,94 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Лебедев Даниил</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900&amp;display=swap" rel="stylesheet">
+	<title>Clicker</title>
 </head>
 <body>
-	<header>
-		<h1 id='header'>Даниил Лебедев</h1>
-		<hr>
-	</header>
-	<main>
-		<h1 id='test'>Даниил Лебедев</h1>
-		<h1 id='test'>Программист</h1>
-	</main>
-	<div class="mbr-section-btn align-right"><a id='button' href="https://vk.com/nero70" target="_blank">Мой вк</a> <a id='button' href="https://kwork.ru/user/daniillebedev231" target="_blank">Мой кворк аккаунт</a>  <a id='button' href="https://vk.com/0nera">Вк друга Арена</a></div>
-	<aside>
-		<h1 id='obo'>Обо мне:</h1>
-		<p id='text'>Всем привет, меня зовут Даниил Лебедев!</p>
-		<p id='text'>Я хочу быть успешным в IT Сфере.</p>
-		<p id='text'>Я знаю такие языки программирования как:</p>
-		<p id='text'>Python,C#,JS</p>
-	</aside>
-	<footer>
-		<h2 id='foot'>@ Copyright Даниил Лебедев</h2>
-	</footer>
+	<script type="text/javascript">
+		money = 0;
+		plusC = 1;
+		function plus(){
+			money += plusC;
+			var coins = document.getElementById('moneyT');
+			coins.innerHTML = money;
+		}
+		function buyTWO(){
+			if(money >= 20){
+				money -= 20;
+				plusC += 2;
+				var coins = document.getElementById('moneyT');
+				coins.innerHTML = money;
+			}
+			else{
+				alert('You dont have enough money!')
+			}
+		}
+		function buyTHREE(){
+			if(money >= 2000){
+				money -= 2000;
+				plusC *= 2;
+				var coins = document.getElementById('moneyT');
+				coins.innerHTML = money;
+			}
+			else{
+				alert('You dont have enough money!')
+			}
+		}
+	</script>
+	<div>
+		<h3 id=moneyT>0</h3>
+		<input type=button value="Click" id=btn onclick="plus()">
+		<br>
+		<br>
+		<input type=button value="Buy +2 for 20" id=btn2 onclick="buyTWO()">
+		<br>
+		<br>
+		<input type=button value="Buy *2 for 2000" id=btn3 onclick="buyTHREE()">
+	</div>
+	<style type="text/css">
+		#btn {
+			position: relative;
+			left: 50%;
+			transform: translate(-50%, 0);
+			color: #fff; /* цвет текста */
+			text-decoration: none; /* убирать подчёркивание у ссылок */
+			user-select: none; /* убирать выделение текста */
+			background: rgb(212,75,56); /* фон кнопки */
+			padding: .7em 1.5em; /* отступ от текста */
+			outline: none; /* убирать контур в Mozilla */
+		} 
+		#btn:hover { background: rgb(232,95,76); } /* при наведении курсора мышки */
+		#btn:active { background: rgb(152,15,0); } /* при нажатии */
+		#btn2 {
+			position: relative;
+			left: 50%;
+			transform: translate(-50%, 0);
+		  	color: #fff; /* цвет текста */
+		  	text-decoration: none; /* убирать подчёркивание у ссылок */
+		  	user-select: none; /* убирать выделение текста */
+		  	background: rgb(212,75,56); /* фон кнопки */
+		 	padding: .7em 1.5em; /* отступ от текста */
+		  	outline: none; /* убирать контур в Mozilla */
+		} 
+		#btn2:hover { background: rgb(232,95,76); } /* при наведении курсора мышки */
+		#btn2:active { background: rgb(152,15,0); } /* при нажатии */
+		#btn3 {
+			position: relative;
+			left: 50%;
+			transform: translate(-50%, 0);
+		  	color: #fff; /* цвет текста */
+		  	text-decoration: none; /* убирать подчёркивание у ссылок */
+		  	user-select: none; /* убирать выделение текста */
+		  	background: rgb(212,75,56); /* фон кнопки */
+		 	padding: .7em 1.5em; /* отступ от текста */
+		  	outline: none; /* убирать контур в Mozilla */
+		} 
+		#btn3:hover { background: rgb(232,95,76); } /* при наведении курсора мышки */
+		#btn3:active { background: rgb(152,15,0); } /* при нажатии */
+		#moneyT {
+			font-size: 30px;
+			text-align: center;
+		}
+	</style>
 </body>
 </html>
