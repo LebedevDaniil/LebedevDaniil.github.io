@@ -5,6 +5,6 @@ var sb = document.getElementById('search');
 var url = document.getElementById('url');
 sb.addEventListener("click",function(){
 	if (url.value == "whiten://test"){
-		document.location.href = "test.html";
+		document.location.href = "https://lebedevdaniil.github.io/test.html";
 	}
 });
