@@ -92,12 +92,12 @@ body {
 	text-align: center;
 }
 #menu {
-	width: 200px;
+	width: 400px;
 	height: 600px;
 	background: linear-gradient(45deg, #EECFBA, #C5DDE8);
 }
 #shop {
-	width: 200px;
+	width: 400px;
 	height: 600px;
 	background: linear-gradient(45deg, #EECFBA, #C5DDE8);
 }
