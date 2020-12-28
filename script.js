@@ -12,11 +12,9 @@ sb.addEventListener("click",function(){
 	}
 	else {
 		if (url.value == "тест" || "Тест" || "test" || "Test" || "самый первый сайт") {
-			window.location.reload();
 		    document.write('</br> </br> </a href="https://lebedevdaniil.github.io/test.html">whiten://test.com</a>');
 		}
-		if (url.value == "игра" || "игры" || "кликер" || "Игра" || "Игра кликер" || "Игры" || "Кликер" || "игра кликер") {
-			window.location.reload();
+		else if (url.value == "игра" || "игры" || "кликер" || "Игра" || "Игра кликер" || "Игры" || "Кликер" || "игра кликер") {
 		    document.write('</br> </br> </a href="https://lebedevdaniil.github.io/clicker.html">whiten://clicker.com</a>');
 		}
 	}
