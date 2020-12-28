@@ -1,4 +1,4 @@
-document.write('<h1> id="title">WhiteNet</h1> </br>');
+document.write('<h1 id="title">WhiteNet</h1> </br>');
 document.write('<input id="url">');
 document.write('<button id="search">Поиск</button>');
 var sb = document.getElementById('search');
